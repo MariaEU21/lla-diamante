@@ -41,7 +41,9 @@ document.addEventListener('DOMContentLoaded', function () {
             // Enviar los datos del formulario a Google Apps Script (o donde lo necesites)
             fetch(form.action, {
                 method: 'POST',
-                body: formData
+                body: formData,
+                mode: 'no-cors' // Esto evita el bloqueo CORS
+
             })
             .then(response => response.text())
             .then(data => {
