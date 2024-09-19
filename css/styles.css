@@ -194,6 +194,52 @@ h1, h2, h1, h2, h3 {
     border-radius: 5px;
 }
 
+input, select {
+    margin: 10px; /* Ajusta el valor según tus necesidades */
+    padding: 10px; /* Para agregar espacio interior */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total del input */
+    width: 100%; /* Para que el input ocupe todo el ancho disponible */
+}
+
+#afiliacion input, #afiliacion select {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.image-grid {
+    display: flex;
+    justify-content: space-between; /* Espacio entre las imágenes */
+    gap: 20px; /* Añadir espacio entre imágenes */
+    margin-top: 40px; /* Margen superior */
+}
+
+.image-grid img {
+    width: calc(33.33% - 20px); /* Cada imagen ocupará un tercio del espacio */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción de la imagen */
+    border-radius: 10px; /* Puntas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave debajo de la imagen */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición suave para el efecto hover */
+}
+
+.image-grid img:hover {
+    transform: scale(1.05); /* Pequeño aumento al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa al hacer hover */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .image-grid {
+        flex-direction: column; /* Apilar las imágenes verticalmente */
+        align-items: center; /* Centrar las imágenes en el eje vertical */
+    }
+
+    .image-grid img {
+        width: 100%; /* Las imágenes ocuparán todo el ancho disponible */
+    }
+}
+
 #formacion-politica {
     text-align: left; /* Alinear todo el contenido a la izquierda */
     padding: 20px;
