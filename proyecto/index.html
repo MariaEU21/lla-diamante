@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Únete a La Libertad Avanza en Diamante, Entre Ríos. Formación política libertaria, eventos y afiliación para jóvenes comprometidos con el futuro de Argentina.">
+    <meta name="keywords" content="La Libertad Avanza, Javier Milei, libertarios, Diamante, Entre Ríos, política juvenil, afiliación">
+    <title>La Libertad Avanza Diamante - Jóvenes por la Libertad</title>
+
+    <!-- FullCalendar CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css" rel="stylesheet">
+    <!-- FullCalendar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="logolla.png" alt="Logo de La Libertad Avanza" class="logo">
+        <h1>¡Bienvenido a La Libertad Avanza en Diamante!</h1>
+
+        <!-- Botón del menú hamburguesa -->
+        <button class="hamburger" id="hamburger">
+            &#9776; <!-- Este símbolo representa el ícono de hamburguesa -->
+        </button>
+
+        <!-- Menú de navegación -->
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="#formacion">Formación</a></li>
+                <li><a href="#militancia-juvenil">Militancia Juvenil</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="inicio">
+                <h2>Jóvenes por la Libertad</h2>
+                <p>Somos el futuro de la política argentina. Únete a nosotros y sé parte del cambio que nuestro país necesita.</p>
+                <a href="#afiliacion-form" class="cta-button">¡Afiliate Ahora!</a>
+            </section>
+
+            <!-- Formulario de afiliación -->
+            <section id="afiliacion-form">
+                <h2>Afiliate a La Libertad Avanza</h2>
+                <form id="afiliacion" action="https://script.google.com/macros/s/AKfycbyxup94WDtyDyqDJhr7zqjEOnmi6RP2WNrjIE2MjJEC6Cb3huO5K2wL3G1FmW-EwxPD/exec" method="POST">
+                    <input type="text" name="nombre" placeholder="Nombre completo" required>
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                    <input type="tel" name="telefono" placeholder="Número de teléfono" required>
+                    <input type="date" name="fechaNacimiento" placeholder="Fecha de nacimiento" required>
+                    <input type="text" name="direccion" placeholder="Dirección" required>
+                    <input type="text" name="ciudad" placeholder="Ciudad" required>
+                    
+                    <select name="nivelInteres" required>
+                        <option value="">Nivel de interés</option>
+                        <option value="alto">Alto - Quiero ser militante activo</option>
+                        <option value="medio">Medio - Me interesa participar ocasionalmente</option>
+                        <option value="bajo">Solo quiero estar informado</option>
+                    </select>
+                    
+                    <button type="submit" class="cta-button">Enviar Solicitud</button>
+                    
+                    <!-- Mensaje de éxito o error -->
+                    <div id="formMessage" style="display: none; color: green;"></div>
+                </form>
+            </section>
+
+            <!-- Quienes Somos -->
+            <section id="quienes-somos">
+                <h2>Quiénes Somos</h2>
+                <p>La Libertad Avanza es un movimiento político fundado por Javier Milei, comprometido con los principios de la libertad individual, la propiedad privada y el libre mercado. En Diamante, Entre Ríos, estamos formando a la próxima generación de líderes libertarios.</p>
+                <h3>Nuestros Valores</h3>
+                <ul>
+                    <li>Libertad económica</li>
+                    <li>Respeto a la propiedad privada</li>
+                    <li>Reducción del Estado</li>
+                    <li>Libre mercado</li>
+                    <li>Responsabilidad individual</li>
+                </ul>
+            </section>
+
+            <!-- Sección de Formación Política -->
+            <section id="formacion-politica">
+                <h2>Formación Política</h2>
+                <p>Explora videos de YouTubers y canales afines a las ideas de La Libertad Avanza:</p>
+
+                <div class="video-grid">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/lCWsCUHvDO8?si=No53q1J4d-UpB4V6" title="YouTube video player" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/kUNrlzVGOY4?si=HJMj_3z7ak-YqLRL" title="YouTube video player" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <ul>
+                    <li><a href="eventos.html">Calendario de Eventos</a></li>
+                </ul>
+            </section>
+
+            <!-- Carrusel de imágenes -->
+            <section id="militancia-juvenil">
+                <h2>Militancia Juvenil</h2>
+                <p>¡Los jóvenes son el corazón de La Libertad Avanza! Tu participación es crucial para construir una Argentina libre y próspera.</p>
+
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <!-- Carrusel con 10 fotos -->
+                        <div class="carousel-slide"><img src="/imagenes/foto1.jfif" alt="Foto 1"></div>
+                        <div class="carousel-slide"><img src="/imagenes/foto2.jfif" alt="Foto 2"></div>
+                        <div class="carousel-slide"><img src="/imagenes/foto3.jfif" alt="Foto 3"></div>
+                        <div class="carousel-slide"><img src="/imagenes/foto4.jfif" alt="Foto 4"></div>
+                        <div class="carousel-slide"><img src="/imagenes/foto5.jfif" alt="Foto 5"></div>
+                        <div class="carousel-slide"><img src="/imagenes/foto6.jfif" alt="Foto 6"></div>
+                        <div class="carousel-slide"><img src="/imagenes/foto7.jfif" alt="Foto 7"></div>
+                        <div class="carousel-slide"><img src="/imagenes/foto8.jfif" alt="Foto 8"></div>
+                        <div class="carousel-slide"><img src="/imagenes/foto9.jfif" alt="Foto 9"></div>
+                        <div class="carousel-slide"><img src="/imagenes/foto10.jfif" alt="Foto 10"></div>
+                    </div>
+                    <!-- Controles -->
+                    <button class="prev" id="prevBtn">&#10094;</button>
+                    <button class="next" id="next>&#10095;</button>
+                    </div>
+    
+                    <!-- Indicadores de las imágenes -->
+                    <div class="carousel-indicators">
+                        <span class="dot" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                        <span class="dot" data-slide="3"></span>
+                        <span class="dot" data-slide="4"></span>
+                        <span class="dot" data-slide="5"></span>
+                        <span class="dot" data-slide="6"></span>
+                        <span class="dot" data-slide="7"></span>
+                        <span class="dot" data-slide="8"></span>
+                        <span class="dot" data-slide="9"></span>
+                    </div>
+                </section>
+    
+                <a href="#afiliacion-form" class="cta-button">¡Únete al Movimiento Juvenil!</a>
+            </section>
+    
+            <!-- Contacto -->
+            <section id="contacto">
+                <h2>Contacta con Nosotros</h2>
+                <p>¿Tienes preguntas? ¡Nuestros coordinadores locales están aquí para ayudarte!</p>
+                <ul>
+                    <li>Email: <a href="mailto:lalibertadavanzadiamante@gmail.com">lalibertadavanzadiamante@gmail.com</a></li>
+                    <li>Teléfono: <a href="tel:+5493412628157">+54 9 3412 62-8157</a></li>
+                </ul>
+            </section>
+    
+            <!-- Redes Sociales -->
+            <section id="redes-sociales">
+                <h2>¡Únete a nuestras redes sociales!</h2>
+                <p>Síguenos en nuestras redes para estar al tanto de todas las novedades y eventos.</p>
+                <div class="social-share">
+                    <a href="https://www.facebook.com/share/h8c9CKvd4f7ksyWk/?mibextid=LQQJ4d" target="_blank">
+                        <img src="/imagenes/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/lalibertadavanza_diamante?igsh=ZjF2b3A0eTByZW9w" target="_blank">
+                        <img src="/imagenes/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://wa.me/5493412628157?text=Hola%2C%20quiero%20más%20información%20sobre%20cómo%20afiliarme%20al%20partido" target="_blank">
+                        <img src="/imagenes/whatsapp.png" alt="WhatsApp">
+                    </a>
+                </div>
+            </section>
+        </main>
+    
+        <!-- Pop-up de imagen de Milei -->
+        <div id="popup" class="popup-overlay">
+            <div class="popup-content">
+                <img src="/imagenes/foto milei.jpg" alt="Publicidad" id="popupImage">
+                <button id="closePopup" class="close-popup-btn">Cerrar</button>
+            </div>
+        </div>
+    
+        <footer>
+            <p>&copy; 2024 La Libertad Avanza Diamante. Todos los derechos reservados.</p>
+        </footer>
+    
+        <script src="/js/script.js"></script>
+    </body>
+    </html>
+    

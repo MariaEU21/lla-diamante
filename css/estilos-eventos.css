@@ -1,0 +1,17 @@
+#calendario-eventos {
+    padding: 20px;
+    text-align: left;
+}
+
+#calendario-eventos h2 {
+    color: #8E44AD; /* Color acorde al estilo de la página */
+}
+
+#calendar {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
