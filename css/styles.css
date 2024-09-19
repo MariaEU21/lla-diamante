@@ -220,16 +220,17 @@ h1, h2, h1, h2, h3 {
 }
 
 .video-container iframe {
-    width: 100%;
+    width: 100%; /* Los iframes se ajustan al ancho del contenedor */
     height: 315px;
 }
 
 /* En pantallas pequeñas, los videos ocuparán el 100% del ancho */
 @media (max-width: 768px) {
     .video-container {
-        flex: 1 1 100%;
+        flex: 1 1 100%; /* Los videos ocuparán todo el ancho en pantallas pequeñas */
     }
 }
+
 
 
 
