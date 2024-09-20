@@ -10,10 +10,9 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         events: [
             {
-                title: '',
-                start: '', // Fecha de inicio
-                end: '', // Fecha de fin (opcional)
-                description: ''
+                title: 'Volvemos a Parque Lezama',
+                start: '2024-09-28T19:00:00',
+                description: 'Lanzamiento Nacional de La Libertad Avanza en Parque Lezama.',
             },
             {
                 title: '',

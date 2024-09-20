@@ -178,6 +178,14 @@ h1, h2, h1, h2, h3 {
     background-color: #E67E22;
 }
 
+.aclaracion {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px; /* Margen para separar del formulario */
+    background-color: #f9f9f9; /* Fondo suave para destacar el texto */
+    padding: 10px;
+    border-radius: 5px; /* Bordes redondeados */
+}
 
 #afiliacion-form {
     background-color: white;

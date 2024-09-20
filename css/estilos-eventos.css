@@ -5,7 +5,11 @@
 
 #calendario-eventos h2 {
     color: #8E44AD; /* Color acorde al estilo de la página */
+    text-align: center; /* Centra el título */
+    font-size: 28px; /* Puedes ajustar el tamaño del texto si deseas */
+    margin-bottom: 20px; /* Añadir espacio debajo del título */
 }
+
 
 #calendar {
     max-width: 900px;
@@ -14,4 +18,25 @@
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 10px;
+}
+#calendario-eventos {
+    margin: 40px 0;
+}
+
+.evento {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.evento h3 {
+    color: #8E44AD; /* Color acorde al estilo de la página */
+    font-size: 24px;
+}
+
+.evento p {
+    font-size: 16px;
+    color: #333;
 }
