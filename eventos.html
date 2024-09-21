@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css/estilos-eventos.css">
 </head>
 <body>
+    
     <section id="calendario-eventos">
         <h2>Calendario de Eventos</h2>
         <div id="calendar">
@@ -21,10 +22,31 @@
                 <img src="./imagenes/evento289.jfif" alt="">
             </div>
     </section>
+    <footer>
+        <p>&copy; <span id="year"></span> La Libertad Avanza Diamante. Todos los derechos reservados.</p>
+        <ul>
+            <li><a href="index.html#inicio">Inicio</a></li>
+            <li><a href="index.html#quienes-somos">Sobre Nosotros</a></li>
+            <li><a href="index.html#formacion">Formación</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+            <li><a href="politicasprivacidad.html">Política de Privacidad</a></li>
+            <li><a href="terminos.html">Términos de Servicio</a></li>
+        </ul>
+        <p>Email: contacto.la.libertad.avanza@gmail.com | Teléfono: +54 9 3412 62-8157</p>
+        <a href="#top" class="scroll-to-top">Volver arriba ↑</a>
+    </footer>
+    
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    
+        
 
+    <script src="/js/script.js"></script>
     <!-- FullCalendar JS -->
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js"></script>
     <!-- Enlace al archivo JS externo -->
     <script src="/js/calendario-eventos.js"></script>
+
 </body>
 </html>

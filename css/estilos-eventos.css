@@ -1,3 +1,5 @@
+
+
 #calendario-eventos {
     padding: 20px;
     text-align: left;
@@ -39,4 +41,55 @@
 .evento p {
     font-size: 16px;
     color: #333;
+}
+
+footer {
+    background-color: #8E44AD; /* Color de fondo púrpura */
+    color: white; /* Texto en color blanco */
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    border-top: 5px solid #6C3483; /* Línea decorativa superior */
+}
+
+footer p {
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Para que se adapte en pantallas pequeñas */
+}
+
+footer ul li {
+    display: inline;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+footer ul li a:hover {
+    color: #FFD700; /* Cambia a dorado al hacer hover */
+}
+
+.scroll-to-top {
+    display: inline-block;
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.scroll-to-top:hover {
+    color: #FFD700; /* Cambia a dorado al hacer hover */
 }
