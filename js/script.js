@@ -1,15 +1,15 @@
-// Manejo del menú hamburguesa
 document.addEventListener('DOMContentLoaded', function () {
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('nav-menu');
 
     // Verificar si los elementos existen antes de interactuar con ellos
     if (hamburger && navMenu) {
-        // Alternar visibilidad del menú cuando se haga clic en el botón hamburguesa
+        // Alternar visibilidad del menú y aplicar animación al ícono
         hamburger.addEventListener('click', function () {
             const ul = navMenu.querySelector('ul');
             if (ul) {
                 ul.classList.toggle('show');
+                hamburger.classList.toggle('open'); // Cambia la clase para abrir/cerrar las rayas
             }
         });
 
@@ -20,11 +20,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 const ul = navMenu.querySelector('ul');
                 if (ul) {
                     ul.classList.remove('show');
+                    hamburger.classList.remove('open'); // Vuelve el ícono a su estado original
                 }
             });
         });
     }
 });
+
 
 // Manejo del formulario de afiliación
 document.addEventListener('DOMContentLoaded', function () {

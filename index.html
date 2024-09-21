@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Únete a La Libertad Avanza en Diamante, Entre Ríos. Formación política libertaria, eventos y afiliación para jóvenes comprometidos con el futuro de Argentina.">
-    <meta name="keywords" content="La Libertad Avanza, Javier Milei, libertarios, Diamante, Entre Ríos, política juvenil, afiliación">
-    <title>La Libertad Avanza Diamante - Jóvenes por la Libertad</title>
+    <meta name="description" content="Unite a La Libertad Avanza en Diamante, Entre Ríos. Formación política libertaria, eventos y afiliación para jóvenes comprometidos con el futuro de Argentina.">
+    <meta name="keywords" content="La Libertad Avanza, Javier Milei, libertarios, Diamante, Entre Ríos, política, juventud liberal, afiliación">
+    <title> <img src="logolla.png" alt="logo">La Libertad Avanza Diamante</title>
     <link rel="icon" type="image/png" href="logolla.png">
 
 
@@ -25,12 +25,13 @@
         <h1 class="panic-show-title">¡Hola a todos!</h1>
 
 
-
-        <!-- Botón del menú hamburguesa -->
-        <button class="hamburger" id="hamburger">
-            &#9776; <!-- Este símbolo representa el ícono de hamburguesa -->
-        </button>
-
+<!-- Botón del menú hamburguesa -->
+<button class="hamburger" id="hamburger">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+</button>
+        
         <!-- Menú de navegación -->
         <nav id="nav-menu">
             <ul>
@@ -176,14 +177,30 @@
                 </section>
     
                 <a href="#afiliacion-form" class="cta-button"> ¡Sumate! 🦁 </a>
-            </section>
-    
+
+                <!-- Card de Preguntas Frecuentes -->
+<div class="faq-card">
+    <h2>Preguntas Frecuentes</h2>
+    <div class="faq-content">
+        <p><strong>1. ¿Qué es La Libertad Avanza?</strong></p>
+        <p>La Libertad Avanza es un movimiento político que promueve la libertad individual, la reducción del Estado, y la economía de mercado, con el objetivo de construir una Argentina libre y próspera.</p>
+
+        <p><strong>2. ¿Qué significa estar afiliado a La Libertad Avanza?</strong></p>
+        <p>Afiliarse a La Libertad Avanza significa ser parte activa del movimiento. Como afiliado, estarás informado sobre eventos y actividades del partido, podrás participar en reuniones y colaborar en las iniciativas del movimiento.</p>
+
+        <p><strong>3. ¿Qué beneficios tiene estar afiliado?</strong></p>
+        <p>Ser afiliado te permite tener una mayor participación en la estructura del partido, recibir información prioritaria sobre nuestras actividades, y tener voz y voto en decisiones importantes del movimiento.</p>
+    </div>
+    <a href="preguntas.html" class="btn-ver-mas">Ver más</a>
+</div>
+
+        
             <!-- Contacto -->
             <section id="contacto">
                 <h2>Contactate con Nosotros</h2>
                 <p>¿Tenés preguntas? ¡Nuestros coordinadores locales están aquí para ayudarte!</p>
                 <ul>
-                    <!--<li>Email: <a href="mailto:lalibertadavanzadiamante@gmail.com">lalibertadavanzadiamante@gmail.com</a></li>-->
+                    <li>Email: <a href="mailto:libertadadavanza.diamante@gmail.com">libertadadavanza.diamante@gmail.com</a></li>
                     <li>Teléfono: <a href="tel:+5493412628157">+54 9 3412 62-8157</a></li>
                 </ul>
             </section>
@@ -215,8 +232,24 @@
         </div>
     
         <footer>
-            <p>&copy; 2024 La Libertad Avanza Diamante. Todos los derechos reservados.</p>
+            <p>&copy; <span id="year"></span> La Libertad Avanza Diamante. Todos los derechos reservados.</p>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#quienes-somos">Sobre Nosotros</a></li>
+                <li><a href="#formacion">Formación</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="politicasprivacidad.html">Política de Privacidad</a></li>
+                <li><a href="terminos.html">Términos de Servicio</a></li>
+            </ul>
+            <p>Email:libertadadavanza.diamante@gmail.com  | Teléfono: +54 9 3412 62-8157</p>
+            <a href="#top" class="scroll-to-top">Volver arriba ↑</a>
         </footer>
+        
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+        
+            
     
         <script src="/js/script.js"></script>
     </body>
