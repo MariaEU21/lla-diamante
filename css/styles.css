@@ -179,8 +179,41 @@ h1, h2, h1, h2, h3 {
         transform: translateY(-10px) rotate(-45deg); /* Tercera línea se convierte en parte de una "X" */
     }
 }
+.cta-button-container2 {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.cta-button-container2 img.logo-izquierda {
+    width: auto;
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+    margin-right: 20px;
+}
 
+.cta-button-container2 h2 {
+    font-size: 28px; /* Tamaño del texto */
+    display: inline-block;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.violeta {
+    color: #8E44AD; /* Color violeta */
+}
+
+.negro {
+    color: #000; /* Color negro */
+}
+
+.aclaracion {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
 
 .cta-button {
     display: block;
@@ -190,7 +223,7 @@ h1, h2, h1, h2, h3 {
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     font-size: 1.2rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -200,15 +233,40 @@ h1, h2, h1, h2, h3 {
 .cta-button:hover {
     background-color: #E67E22;
 }
-
-.aclaracion {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 20px; /* Margen para separar del formulario */
-    background-color: #f9f9f9; /* Fondo suave para destacar el texto */
-    padding: 10px;
-    border-radius: 5px; /* Bordes redondeados */
+.cta-button:hover {
+    background-color: #D35400; /* Efecto hover: color más oscuro */
+    transform: translateY(-3px); /* Efecto hover: eleva el botón */
 }
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .cta-button-container2 {
+        flex-direction: column; /* Apila la imagen y el texto verticalmente */
+        align-items: center;
+    }
+
+    .cta-button-container2 img.logo-izquierda {
+        height: 80px; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+        margin-right: 0;
+        margin-bottom: 10px; /* Agrega margen entre la imagen y el texto */
+    }
+
+    .cta-button-container2 h2 {
+        font-size: 22px; /* Reduce el tamaño del texto */
+    }
+
+    .cta-button {
+        width: 80%; /* Botón más grande en pantallas pequeñas */
+        font-size: 16px; /* Ajusta el tamaño del texto del botón */
+    }
+
+    .aclaracion {
+        font-size: 12px; /* Texto más pequeño para la aclaración */
+    }
+}
+
+
+
 
 #afiliacion-form {
     background-color: white;
@@ -383,6 +441,12 @@ input, select {
 
 .dot.active {
     background-color: #717171;
+
+    .sumate-button {
+        width: auto; /* Ajusta el ancho al contenido */
+        padding: 15px 30px; /* Mantiene un tamaño proporcional al botón de "Enviar Solicitud" */
+    }
+    
 }
 /* Estilos para la card de Preguntas Frecuentes */
 .faq-card {
@@ -597,7 +661,9 @@ footer ul li a:hover {
     footer p {
         font-size: 12px;
     }
-
+.letrachica{
+    font-size: 10px;
+}
     footer ul li {
         margin-bottom: 10px;
     }
